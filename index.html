@@ -18,120 +18,174 @@
 <body>
     <div class="container mt-4">
         <!-- Logo y título -->
-        <nav class="navbar bg-body-tertiary mb-4">
+        <section id="home">
+            <nav class="navbar bg-body-tertiary mb-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#home">
+                        <img src="logoPet.png" alt="Logo" width="70" height="64" class="d-inline-block align-text-top">
+                        PetSociety by Felipe Navarro
+                    </a>
+                </div>
+            </nav>
+        </section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="logoPet.png" alt="Logo" width="70" height="64" class="d-inline-block align-text-top">
-                    PetSociety by Felipe Navarro
-                </a>
+                <a class="navbar-brand" href="#home">¡Bienvenidos!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link" href="#productos">Productos</a>
+                        <a class="nav-link" href="#quienes-somos">¿Quienes somos?</a>
+                    </div>
+                </div>
             </div>
         </nav>
-
         <!-- Tarjeta de producto -->
-        <div class="container mt-4">
-            <div class="row mb-4">
-                <!-- Tarjetas 1, 2, 3 -->
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="better-bones.png" class="card-img-top" alt="better-bones">
-                        <div class="card-body">
-                            <h5 class="card-title">Better Bones huesitos</h5>
-                            <div class="precio">
-                                <span class="precio-antiguo">$29.990</span>
-                                <span class="precio-oferta">$15.990</span>
+        <section id="productos">
+            <h2></h2>
+            <h2 class="seccion-header">Nuestros productos destacados</h2>
+            <div class="container mt-4">
+                <div class="row mb-4">
+                    <!-- Tarjetas 1, 2, 3 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <img src="better-bones.png" class="card-img-top" alt="better-bones">
+                            <div class="card-body">
+                                <h5 class="card-title">Better Bones huesitos</h5>
+                                <div class="precio">
+                                    <span class="precio-antiguo">$29.990</span>
+                                    <span class="precio-oferta">$15.990</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
+                                </div>
                             </div>
-                            <div class="text-center">
-                                <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <img src="vitakraft2.png" class="card-img-top" alt="vitakraft2">
+                            <div class="card-body">
+                                <h5 class="card-title">Vitakraft de carne</h5>
+                                <div class="precio">
+                                    <span class="precio-antiguo">$12.990</span>
+                                    <span class="precio-oferta">$9.990</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <img src="royal-canin.jpg" class="card-img-top" alt="royal-canin">
+                            <div class="card-body">
+                                <h5 class="card-title">Royal Canin 7.5Kg</h5>
+                                <div class="precio">
+                                    <span class="precio-antiguo">$49.990</span>
+                                    <span class="precio-oferta">$25.990</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="vitakraft2.png" class="card-img-top" alt="vitakraft2">
-                        <div class="card-body">
-                            <h5 class="card-title">Vitakraft de carne</h5>
-                            <div class="precio">
-                                <span class="precio-antiguo">$12.990</span>
-                                <span class="precio-oferta">$9.990</span>
-                            </div>
-                            <div class="text-center">
-                                <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
+                <div class="row">
+                    <!-- Tarjetas 4, 5, 6 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <img src="hamaca.png" class="card-img-top" alt="hamaca">
+                            <div class="card-body">
+                                <h5 class="card-title">Hamaca de polar</h5>
+                                <div class="precio">
+                                    <span class="precio-antiguo">$19.990</span>
+                                    <span class="precio-oferta">$5.990</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="royal-canin.jpg" class="card-img-top" alt="royal-canin">
-                        <div class="card-body">
-                            <h5 class="card-title">Royal Canin 7.5Kg</h5>
-                            <div class="precio">
-                                <span class="precio-antiguo">$49.990</span>
-                                <span class="precio-oferta">$25.990</span>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <img src="set-juegos.png" class="card-img-top" alt="set-juegos">
+                            <div class="card-body">
+                                <h5 class="card-title">Set de tubos para hamster</h5>
+                                <div class="precio">
+                                    <span class="precio-antiguo">$14.990</span>
+                                    <span class="precio-oferta">$3.990</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
+                                </div>
                             </div>
-                            <div class="text-center">
-                                <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <img src="furminator2.png" class="card-img-top" alt="furminator2">
+                            <div class="card-body">
+                                <h5 class="card-title">Furminator para perro</h5>
+                                <div class="precio">
+                                    <span class="precio-antiguo">$42.990</span>
+                                    <span class="precio-oferta">$26.990</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <!-- Tarjetas 4, 5, 6 -->
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="hamaca.png" class="card-img-top" alt="hamaca">
-                        <div class="card-body">
-                            <h5 class="card-title">Hamaca de polar</h5>
-                            <div class="precio">
-                                <span class="precio-antiguo">$19.990</span>
-                                <span class="precio-oferta">$5.990</span>
-                            </div>
-                            <div class="text-center">
-                                <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+    </section>
+    <!-- Quienes somos -->
+    <section id="quienes-somos" class="quienes-wrapper">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-3 text-primary">¿Quiénes somos?</h2>
+                    <p class="lead text-muted">
+                        En PetSociety creemos que cada mascota merece amor, bienestar y alegría. Somos una tienda
+                        comprometida con ofrecer productos de calidad, precios accesibles y una experiencia cercana para
+                        todos los amantes de los animales.
+                    </p>
                 </div>
+            </div>
 
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="set-juegos.png" class="card-img-top" alt="set-juegos">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <img src="equipo.jpeg" class="card-img-top" alt="Nuestro equipo">
                         <div class="card-body">
-                            <h5 class="card-title">Set de tubos para hamster</h5>
-                            <div class="precio">
-                                <span class="precio-antiguo">$14.990</span>
-                                <span class="precio-oferta">$3.990</span>
-                            </div>
-                            <div class="text-center">
-                                <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="furminator2.png" class="card-img-top" alt="furminator2">
-                        <div class="card-body">
-                            <h5 class="card-title">Furminator para perro</h5>
-                            <div class="precio">
-                                <span class="precio-antiguo">$42.990</span>
-                                <span class="precio-oferta">$26.990</span>
-                            </div>
-                            <div class="text-center">
-                                <a href="#formulario-pago" class="btn btn-primary">Comprar</a>
-                            </div>
+                            <h5 class="card-title">Pasión por las mascotas</h5>
+                            <p class="card-text">
+                                Nuestro equipo está formado por personas que aman lo que hacen. Desde la selección de
+                                productos hasta el diseño de cada detalle, trabajamos para que tu mascota reciba lo
+                                mejor.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <a href="#home" class="volver-arriba-btn">⬆️</a>
+    </section>
     <!-- Tarjeta de credito/debito -->
     <div id="formulario-pago" class="pago-wrapper">
         <div class="card">

@@ -12,6 +12,7 @@ body {
   color: #212529;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -209,6 +210,71 @@ input.form-control {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+/* QUIENES SOMOS */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.nav-btn {
+  background-color: #0077b5;
+  color: #ffffff !important;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #005582;
+  text-decoration: none;
+}
+
+.quienes-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff3cd;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+
+.quienes-wrapper .card {
+  max-width: 600px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* VOLVER AL INICIO */
+.volver-arriba-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #0077b5;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  z-index: 20;
+}
+
+.volver-arriba-btn:hover {
+  background-color: #005582;
+}
+
+
+
 
 /* RESPONSIVE AJUSTES */
 @media (max-width: 768px) {
@@ -248,5 +314,21 @@ input.form-control {
   .seccion-header {
     font-size: 1.3rem;
     margin-bottom: 16px;
+  }
+    .quienes-wrapper {
+    padding: 30px 15px;
+    height: auto;
+  }
+
+  .quienes-wrapper .card {
+    padding: 20px;
+  }
+
+  .quienes-wrapper h2 {
+    font-size: 1.8rem;
+  }
+
+  .quienes-wrapper p {
+    font-size: 1rem;
   }
 }
