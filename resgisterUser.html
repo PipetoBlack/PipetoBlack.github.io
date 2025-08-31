@@ -12,8 +12,9 @@
 <body>
     <div class="registro-wrapper">
         <div class="registro-card">
-            <h2 class="text-center mb-4">Registro de usuario</h2>
-
+            <div class="mb-4 p-3 border rounded bg-light">
+                <h2 class="mb-0 text-start fs-5">Registro de usuario</h2>
+            </div>
             <!--Inicio formulario -->
             <form class="needs-validation" novalidate>
                 <!-- Nombre completo -->
@@ -56,7 +57,7 @@
                     <div class="invalid-feedback mt-1">Ingrese contraseña segura</div>
                 </div>
 
-                <!-- Teléfono -->
+                <!-- Telefono -->
                 <div class="mb-3">
                     <label for="telefono" class="form-label">Telefono (opcional)</label>
                     <input type="tel" class="form-control" id="telefono" pattern="^(\+?56)?(9\d{8})?$"
@@ -64,7 +65,7 @@
                     <div class="invalid-feedback mt-1">Numero invalido</div>
                 </div>
 
-                <!-- Términos -->
+                <!-- Terminos -->
                 <div class="mb-3">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="terminos" required>
@@ -73,19 +74,63 @@
                     </div>
                 </div>
 
-                <!-- Botón -->
+                <!-- Registro de mascota -->
                 <div class="mb-3">
-                    <button class="btn btn-primary w-100" type="submit">Registrarse</button>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h4 class="mb-0">Registro de mascota</h4>
+                        <button type="button" class="btn btn-outline-primary" id="agregarMascota">Añadir nuevo
+                            registro</button>
+                    </div>
+                    <div id="mascotasContainer" class="d-flex flex-column gap-3"></div>
+                </div>
+
+                <!-- Plantilla registro mascota -->
+                <div id="plantillaMascota" class="mascota-template d-none">
+                    <div class="mb-3 p-3 border rounded">
+                        <!-- Nombre de la mascota -->
+                        <div class="mb-2">
+                            <label class="form-label">Nombre de la mascota</label>
+                            <input type="text" class="form-control" name="mascotaNombre[]"
+                                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" required maxlength="50"
+                                title="Solo letras y espacios hasta 50 caracteres">
+                                <div class="invalid-feedback mt-1">Ingresa el nombre de la mascota</div>
+                        </div>
+
+                        <!-- Tipo + boton eliminar -->
+                        <div class="row mb-2 align-items-end">
+                            <div class="col-8">
+                                <label class="form-label">Tipo</label>
+                                <select class="form-select" name="mascotaTipo[]" required title="Puedes escoger una de las opciones o bien, haz clic en 'otro'">
+                                    <option value="">-- Seleccione un tipo de mascota --</option>
+                                    <option value="Perro">PERRO</option>
+                                    <option value="Gato">GATO</option>
+                                    <option value="Ave">AVE</option>
+                                    <option value="Otro">OTRO</option>
+                                </select>
+                                <div class="invalid-feedback mt-1">Seleccione el tipo</div>
+                            </div>
+                            <div class="col-4 text-end">
+                                <button type="button"
+                                    class="btn btn-sm btn-danger btn-mascota eliminar-mascota">Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boton registrar -->
+                <div class="text-center">
+                    <button class="btn btn-primary btn-final">Registrar</button>
                 </div>
             </form>
             <!--Fin inicio formulario -->
 
-            <!--Validacion campos vacios -->
-            <script src="scriptRegister.js"></script>
-            <!--fin validacion campos vacios -->
-
+            <!--Manipulacion del DOM AUN SIN USAR!! -->
             <script src="https://code.jquery.com/jquery-3.7.1.min.js"
                 integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            <!--Validacion script js -->
+            <script src="scriptRegister.js"></script>
+        </div>
+    </div>
 </body>
 
 </html>
