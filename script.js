@@ -1,3 +1,13 @@
+
+//CARRUSEL
+const myCarouselElement = new bootstrap.Carousel('#myCarousel')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: true
+})
+
+// FORMULARIO
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
   'use strict'
@@ -17,4 +27,5 @@
     }, false)
   })
 })()
+
 
