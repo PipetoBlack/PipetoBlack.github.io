@@ -93,14 +93,15 @@
                             <input type="text" class="form-control" name="mascotaNombre[]"
                                 pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" required maxlength="50"
                                 title="Solo letras y espacios hasta 50 caracteres">
-                                <div class="invalid-feedback mt-1">Ingresa el nombre de la mascota</div>
+                            <div class="invalid-feedback mt-1">Ingresa el nombre de la mascota</div>
                         </div>
 
                         <!-- Tipo + boton eliminar -->
                         <div class="row mb-2 align-items-end">
                             <div class="col-8">
                                 <label class="form-label">Tipo</label>
-                                <select class="form-select" name="mascotaTipo[]" required title="Puedes escoger una de las opciones o bien, haz clic en 'otro'">
+                                <select class="form-select" name="mascotaTipo[]" required
+                                    title="Puedes escoger una de las opciones o bien, haz clic en 'otro'">
                                     <option value="">-- Seleccione un tipo de mascota --</option>
                                     <option value="Perro">PERRO</option>
                                     <option value="Gato">GATO</option>
