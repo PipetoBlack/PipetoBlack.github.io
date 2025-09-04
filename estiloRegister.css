@@ -1,14 +1,3 @@
-/* Fondo general */
-body {
-    background-color: #f0f2f5;
-    margin: 0;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-
 .titulo-enmarcado {
     background-color: #f8f9fa;
     border-left: 4px solid #0d6efd;
@@ -22,6 +11,8 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+
+    border-color: 5px black  solid;
 }
 
 /* Tarjeta tipo ventana */
@@ -38,14 +29,6 @@ body {
 .form-control:focus {
     border-color: #0d6efd;
     box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
-}
-
-/* Boton general*/
-.btn-primary {
-    width: 100%;
-    padding: 0.6rem;
-    font-weight: 500;
-    border-radius: 0.5rem;
 }
 
 /* Boton registrar*/
