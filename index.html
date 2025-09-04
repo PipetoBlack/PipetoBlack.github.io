@@ -9,34 +9,44 @@
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2171/2171981.png" type="image/x-icon">
 </head>
 <body>
-    <header >
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f9c971;">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="container-fluid collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="d-flex    ">
-                <a class="nav-item nav-link active" href="/index.html" style="color: white; ">Inicio <span class="sr-only">(current)</span></a>
-              </div>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f9c971;">
+    <div class="container-fluid">
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-              <div class="mx-auto">
-                <img src="/images/Imagen1.jpg" style="width: 40vh;"  alt="">
-              </div>
+      <!-- Contenido del navbar -->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-              <div class="d-flex"> 
-                <button type="button" class="btn btn-primary mr-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  Iniciar sesión
-                </button>
-                <a class="btn btn-primary" style="background-color:#f7f7f7; border-color: #f7f7f7; color: black ;" href="/resgisterUser.html" role="button">Registrarse</a>
-              </div>
-            </div>
-        </nav>
-    </header>
+        <!-- Inicio -->
+        <div class="d-flex">
+          <a class="nav-item nav-link active" href="/index.html" style="color: white;">Inicio 
+          </a>
+        </div>
+
+        <!-- Logo centrado -->
+        <div class="mx-auto">
+          <img src="/images/Imagen1.jpg" style="width: 40vh;" alt="">
+        </div>
+
+        <!-- Botones -->
+        <div class="d-flex" style="gap:15px;">
+          <button type="button" class="btn btn-primary me-4  " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Iniciar sesión
+          </button>
+          <a class="btn btn-primary" style="background-color:#f7f7f7; border-color: #f7f7f7; color: black;" href="/resgisterUser.html" role="button">Registrarse</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
     <main>
 
-
-
       <!-- Modal -->
+      
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -79,7 +89,7 @@
                         </div>
 
                         <div class="text-center mt-2">
-                          <a href="/resgisterUser.html">¿Olvidaste tu contraseña?</a>
+                          <a href="#">¿Olvidaste tu contraseña?</a>
                         </div>
                     </form>
                     <!-- termino formulario   -->
@@ -90,6 +100,8 @@
           </div>
         </div>
       </div>
+
+
 
     </main>
     <script src="script.js"></script>
