@@ -18,5 +18,14 @@
     }, false)
   })
 })()
-
+document.getElementById('formRecuperar').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const form = e.target;
+  if (form.checkValidity()) {
+    document.getElementById('mensajeRecuperacion').classList.remove('d-none');
+    form.classList.add('was-validated');
+  } else {
+    form.classList.add('was-validated');
+  }
+});
 
